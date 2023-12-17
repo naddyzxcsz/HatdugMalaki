@@ -1,0 +1,440 @@
+body{
+  background-color: #323339;
+}
+
+/* ---------------------- Start Sidebar CSS ---------------------- */
+.sidebar-container{
+  height: 100%;
+  width: 280px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #393B45;
+  padding-top: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-header img{
+  width: 4rem;
+  height: 4rem;
+  padding-right: 10px;
+}
+
+.sidebar-header a{
+  display: flex;
+  align-items: center; 
+  padding-left: 1.5rem;
+  font-size: 14px;
+}
+
+.sidebar-container a {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sidebar img{
+  width: 2.2rem;
+  height: 2.2rem;
+  padding-right: 10px;
+}
+
+.sidebar a{ 
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect */
+.sidebar a::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 0; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #F3B54A; 
+  transition: height 0.3s ease-out; 
+  border-radius: 2px;
+}
+
+.sidebar a:hover::before {
+  height: 100%;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar a.active::before {
+  height: 100%;
+}
+
+.sidebar a.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/* ---------------------- End Sidebar CSS ----------------------*/
+
+/* ---------------------- Start Homepage CSS ----------------------*/
+.home-logo {
+  position: absolute;
+  top: 18%;
+  left: 30%;
+  height: 400px;
+  width: 400px;
+}
+
+.eml1 {
+  position: absolute;
+  top: 7%;
+  left: 91%;
+  height: 70px;
+  width: 70px;
+}
+
+.eml2 {
+  position: absolute;
+  top: 85%;
+  left: 22.2%;
+  height: 70px;
+  width: 70px;
+}
+
+.txt1{
+  font-size: 32px;
+  font-weight: normal;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  line-height: 1.5; 
+  position: absolute;
+  top: 20%;
+  left: 55%;
+}
+
+.txt2{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  color: #D8D9DE;
+  white-space: normal; 
+  word-break: break-word; 
+  max-width: 500px; 
+  line-height: 1.6; 
+  position: absolute;
+  top: 27%;
+  left: 55%;
+}
+
+span{
+  color: #F3B54A;
+}
+
+/*button*/
+button{
+  position: absolute;
+  top: 62%;
+  left: 55%;
+  border: none;
+  background: #F3B54A;
+  padding: 16px 30px;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.2s;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+button:hover {
+  box-shadow: 0 0 0 4px #323339, 0 0 0 8px #F3B54A;
+}
+
+/* ---------------------- End Homepage CSS ----------------------*/
+
+/* ---------------------- Start Project CSS ----------------------*/
+.project-content h1{
+  color: #D8D9DE;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 40px;
+  padding-left: 25px;
+  z-index: 2;
+}
+
+.h1-bg{
+  background-color: #323339;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 20%;
+  z-index: 3;
+}
+
+/* Project 1 */
+.box-proj1{
+  background-color: #393B45;
+  height: 500px;
+  width: 1000px;
+  position: absolute;
+  top: 18%;
+  left: 26%;
+  border-radius: 20px;
+}
+
+.proj1-pic{
+  height: 300px;
+  width: 500px;
+  border-radius: 5px;
+  position: absolute;
+  top: 25%;
+  left: 29%;
+}
+
+.proj1-title{
+  position: absolute;
+  top: 21%;
+  left: 63%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  font-size: 25px;
+  color: #F3B54A;
+  z-index: 2;
+}
+
+.arrow1{
+  position: absolute;
+  top: 26%;
+  left: 83%;
+  height: 0.4cm;
+  width: 0.4cm;
+  z-index: 2;
+}
+
+.proj1-desc{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  color: #D8D9DE;
+  text-align: justify;
+  white-space: normal; 
+  word-break: break-word; 
+  max-width: 380px; 
+  line-height: 1.6;
+  position: absolute;
+  top: 28%;
+  left: 63%;
+}
+
+.proj1-pglang1{
+  position: absolute;
+  font-weight: bold;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 25px;
+  color: #F3B54A;
+  background-color: #6E7889;
+  height: 35px;
+  width: 80px;
+  text-align: center;
+  border-radius: 50px;
+  top: 65%;
+  left: 30%;
+  z-index: 2
+}
+
+.proj1-pglang2{
+  position: absolute;
+  font-weight: bold;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  color: #F3B54A;
+  background-color: #6E7889;
+  height: 29.5px;
+  width: 150px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  text-align: center;
+  border-radius: 50px;
+  top: 65.7%;
+  left: 36%;
+  z-index: 2
+}
+
+/* Project 2 */
+.box-proj2{
+  background-color: #393B45;
+  height: 500px;
+  width: 1000px;
+  position: absolute;
+  top: 95%;
+  left: 26%;
+  border-radius: 20px;
+}
+
+.proj2-pic{
+  height: 300px;
+  width: 500px;
+  border-radius: 5px;
+  position: absolute;
+  top: 102%;
+  left: 29%;
+}
+
+.proj2-title{
+  position: absolute;
+  top: 98%;
+  left: 63%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  font-size: 25px;
+  color: #F3B54A;
+  z-index: 2;
+}
+
+.arrow2{
+  position: absolute;
+  top: 103%;
+  left: 70.5%;
+  height: 0.4cm;
+  width: 0.4cm;
+  z-index: 2;
+}
+
+.proj2-desc{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  color: #D8D9DE;
+  text-align: justify;
+  white-space: normal; 
+  word-break: break-word; 
+  max-width: 380px; 
+  line-height: 1.6;
+  position: absolute;
+  top: 105%;
+  left: 63%;
+}
+
+.proj2-pglang1{
+  padding-top: 2px;
+  position: absolute;
+  font-weight: bold;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  color: #F3B54A;
+  background-color: #6E7889;
+  height: 35px;
+  width: 80px;
+  text-align: center;
+  border-radius: 50px;
+  top: 142%;
+  left: 30%;
+  z-index: 2
+}
+
+/* Project 3 */
+.box-proj3{
+  background-color: #393B45;
+  height: 500px;
+  width: 1000px;
+  border-radius: 20px;
+  position: absolute;
+  top: 173%;
+  left: 26%;
+}
+
+.proj3-pic{
+  height: 300px;
+  width: 500px;
+  border-radius: 5px;
+  position: absolute;
+  top: 183%;
+  left: 29%;
+}
+
+.proj3-title{
+  position: absolute;
+  top: 179%;
+  left: 63%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  font-size: 25px;
+  color: #F3B54A;
+  z-index: 2;
+}
+
+.arrow3{
+  position: absolute;
+  top: 184%;
+  left: 74.5%;
+  height: 0.4cm;
+  width: 0.4cm;
+  z-index: 2;
+}
+
+.proj3-desc{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  color: #D8D9DE;
+  text-align: justify;
+  letter-spacing: 1px;
+  white-space: normal; 
+  word-break: break-word; 
+  max-width: 380px; 
+  line-height: 1.6;
+  position: absolute;
+  top: 185%;
+  left: 63%;
+}
+
+.proj3-pglang1{
+  padding-top: 2px;
+  position: absolute;
+  font-weight: bold;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  color: #F3B54A;
+  background-color: #6E7889;
+  height: 35px;
+  width: 80px;
+  text-align: center;
+  border-radius: 50px;
+  top: 223%;
+  left: 30%;
+  z-index: 2;
+}
+
+.pj-eml1 {
+  position: fixed;
+  top: 7%;
+  left: 91%;
+  height: 70px;
+  width: 70px;
+  z-index: 4;
+}
+
+.pj-eml2 {
+  position: fixed;
+  top: 85%;
+  left: 22.2%;
+  height: 70px;
+  width: 70px;
+}
+
+/* ---------------------- End Project CSS ----------------------*/
+
+/* ---------------------- Start About CSS ----------------------*/
+
+
+
+/* ---------------------- End About CSS ----------------------*/
